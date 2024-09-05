@@ -2,8 +2,8 @@
 
 // console.log(studentid);
 // datatypes 
-//primitive string , numbers , undefined , boolean , null, symbol, bigint
-//non primitive datatype(reference datatypye): array , funtion , objects
+// primitive string , numbers , undefined , boolean , null, symbol, bigint
+// non primitive datatype(reference datatypye): array , funtion , objects
 
 // const score = 100;
 // const scorevalue =9.8 ;
@@ -22,12 +22,12 @@
 // console.log(Bignumber);
 // console.log(typeof Bignumber);
 
-// not primitive datatype eaxmple
-//array
+// ////////not primitive datatype eaxmple****
+// ////array/////////
 // const fruit = ["apple" , "mango" , "orange"]
 // console.log(fruit);
 
-//objects use key value in curley brackets pair
+////////// objects use key value in curley brackets pair****
  
 // let mybook = {
 //  book1 : "english" ,
@@ -38,7 +38,15 @@
 
 // console.log(mybook);
 
-//function 
-const myfunction = function(){
-    console.log("hello world");
-}
+/////////function ****
+// const myfunction = function(){
+//     console.log("hello world");
+// }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  stack (primitive ) get copy  and head heap (non primitive) get orignal value referance 
+ let name = " aira" ;
+ let anothername = "name";
+
+  anothername = "haya "; 
+ console.log(name) ;
+  console.log(anothername);
