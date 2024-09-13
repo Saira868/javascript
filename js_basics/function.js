@@ -37,7 +37,7 @@ function loginusermsg(username){
 }
 // console.log(loginusermsg("aira"));
 
-// function in array
+// ++++++++++function in array
 const mynewarray = [200 , 400 , 900 , 700 , 800 , 500]
 function return3rdvalue(getarray){
     return getarray[3]
@@ -45,7 +45,7 @@ function return3rdvalue(getarray){
 // console.log(return3rdvalue(mynewarray));
 // console.log(return3rdvalue([200 , 400 , 900, 700 , 800 , 500]));
 
-// function in objects
+//++++++++++++ function in objects
 // const myobj = {
 //     name : "book" ,
 //     price :450 ,
@@ -65,10 +65,59 @@ const user = {
 }
 
 function handleobject(anyobj){
-    console.log(`username is ${anyobj.username} and price is ${anyobj.price}`)
+    // console.log(`username is ${anyobj.username} and price is ${anyobj.price}`)
 }
 // handleobject(user)
-handleobject({
-    username : "name" ,
-    price : 400
-});
+// handleobject({
+//     username : "name" ,
+//     price : 400
+// });
+//++++++++++using this keyword
+const newUser = {
+    username : "aira" ,
+    price   : 300 ,
+    welcomemsg : function(){
+     console.log (`${this.username} , welcome to website`)
+    //  console.log(this)
+    }
+}
+// newUser.welcomemsg()
+// newUser.username = "haya"
+// newUser.welcomemsg()
+
+// console.log(this)
+
+//++++++arrow function
+
+// const notebook = function(){
+//   let  username = "book" 
+// //   console.log(this .username)
+// }
+// console.log(notebook)
+
+const notebook = () => {
+    let username = "arial"
+    // console.log(this . username)
+    // console.log(this)
+}
+// notebook()
+
+const addtwo = (num1 , num2) => {
+    return num1 + num2
+}
+// console.log(addtwo(2 ,6));
+
+///2nd method of arrow function
+// const addthree = (num1 , num2 , num3) => num1 + num2 + num3
+const addthree = (num1 , num2 , num3) => (num1 + num2 + num3)
+
+// console.log(addthree(2 , 4 ,8));
+
+///++++++++++++IIFE (immediatly invoked function Expression)
+//   (function one() {
+//     console.log(`DB Connected`);
+//    })();
+
+ (function one() {
+    console.log(`DB Connected`);
+  })();
